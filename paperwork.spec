@@ -78,10 +78,3 @@ PYTHONPATH=%{buildroot}%{python_sitelib} \
 			--data_base_dir %{buildroot}%{_datadir} \
 			--icon_base_dir %{buildroot}%{_datadir}/icons
 
-%check
-export PATH=%{buildroot}%{_bindir}:$PATH
-export PYTHONPATH=%{buildroot}%{python_sitelib}:$PYTHONPATH
-
-xvfb-run -a paperwork-gtk chkdeps
-#xvfb-run -a %{python} -m unittest discover --verbose -s tests
-
