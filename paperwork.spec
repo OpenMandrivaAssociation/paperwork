@@ -31,15 +31,18 @@ This package provides the GTK frontend for paperwork.
 
 %package -n python-%{name}
 Summary:	%{summary}
-
 BuildRequires:	libnotify
 BuildRequires:	/usr/bin/xvfb-run
+BuildRequires:	python%{pyver}dist(openpaperwork-core)
+BuildRequires:	python%{pyver}dist(openpaperwork-gtk)
+BuildRequires:	python%{pyver}dist(paperwork-backend)
 BuildRequires:	python%{pyver}dist(distro)
 BuildRequires:	python%{pyver}dist(pycountry)
 BuildRequires:	python%{pyver}dist(pygobject)
 BuildRequires:	python%{pyver}dist(pyocr)
 BuildRequires:	python%{pyver}dist(python-levenshtein)
 BuildRequires:	python%{pyver}dist(pyxdg)
+
 Requires:	tesseract-osd
 Requires:	libinsane-gobject
 
