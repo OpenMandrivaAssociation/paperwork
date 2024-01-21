@@ -44,7 +44,7 @@ BuildRequires:	python%{pyver}dist(python-levenshtein)
 BuildRequires:	python%{pyver}dist(pyxdg)
 
 Requires:	tesseract-osd
-Requires:	libinsane-gobject
+Requires:	typelib(Libinsane)
 
 %description -n python-%{name}
 Paperwork is a personal document manager. It manages scanned documents 
