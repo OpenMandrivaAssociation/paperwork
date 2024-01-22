@@ -1,14 +1,21 @@
+#
+# (mandian)
+# NOTE: replaced by python-paperwork-gtk
+#
+
 Summary:	A personal document manager
 Name:		paperwork
-Version:	2.1.2
+Version:	2.2.1
 Release:	1
 License:	GPLv3+
 URL:		https://www.openpaper.work/en/
-Source0:	https://pypi.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
+#Source0:	https://pypi.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
+Source0:	https://gitlab.gnome.org/World/OpenPaperwork/%{name}/-/archive/%{version}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(python)
 Requires:	python-%{name} = %{version}-%{release}
 
 BuildArch:	noarch
+
 %description
 Paperwork is a personal document manager. It manages scanned documents 
 and PDFs.
